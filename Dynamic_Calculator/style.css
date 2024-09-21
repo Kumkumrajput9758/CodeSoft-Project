@@ -1,0 +1,21 @@
+.main{
+    background-color: aqua;
+    background-size: cover;
+    width: fit-content;
+    border-radius: 10px 10px 10px 10px;
+    padding: 0px 10px 10px 10px;
+   
+    
+    
+}
+.result{
+ font-size: x-large;
+ 
+  height: 8vh;
+  padding: 5px 5px;
+  padding-right: 15px;
+  margin: 20px 20px;
+  text-align: right;
+  font-size: xx-large;
+  font-weight: bold;
+}

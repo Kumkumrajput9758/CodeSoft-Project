@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dynamic Calculator</title>
+    <link rel="stylesheet" href="/boostrap/bootstrap.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container ">
+        <h3 class="text-center text-bg-secondary p-2 " >Dynamic Calculator</h3>
+        <center><div class="main" name="main">
+
+                <div class="result " id='res' ></div>
+           <hr>
+            <div class="row mb-2">
+                
+                <div class="col">
+                    <button class="btn btn-outline-danger fw-bold p-3 m-2 " style="font-weight: bold;" value="0" onclick = "Clear('')">AC</button>
+                    <button class="btn btn-outline-danger fw-bold p-3 m-2 " style="font-weight: bold;" value="" onclick ="Back('')">DE</button>
+                    <button class="btn btn-outline-danger fw-bold p-3 m-2 " style="font-weight: bold;" value="." onclick = "Solve('.')" >&nbsp;.&nbsp;</button>
+                    <button class="btn btn-outline-danger fw-bold p-3 m-2 " style="font-weight: bold;" value="/" onclick = "Solve('/')">&nbsp;/&nbsp;</button>
+                </div>
+            </div>
+            <div class="row mb-2">
+                <div class="col">
+                    <button class="btn btn-outline-dark fw-bold p-3 m-2 " value="7" onclick = "Solve('7')">&nbsp;7&nbsp;</button>
+                    <button class="btn btn-outline-dark fw-bold p-3 m-2 " value="8" onclick = "Solve('8')">&nbsp;8&nbsp;</button>
+                    <button class="btn btn-outline-dark fw-bold p-3 m-2 " value="9" onclick = "Solve('9')">&nbsp;9&nbsp;</button>
+                    <button class="btn btn-outline-danger fw-bold p-3 m-2 " style="font-weight: bold;" value="*" onclick = "Solve('*')">&nbsp;*&nbsp;</button>
+                </div>
+            </div>
+            <div class="row mb-2">
+                <div class="col">
+                    <button class="btn btn-outline-dark fw-bold p-3 m-2 " value="4"onclick = "Solve('4')">&nbsp;4&nbsp;</button>
+                    <button class="btn btn-outline-dark fw-bold p-3 m-2 " value="5" onclick = "Solve('5')">&nbsp;5&nbsp;</button>
+                    <button class="btn btn-outline-dark fw-bold p-3 m-2 " value="6" onclick = "Solve('6')">&nbsp;6&nbsp;</button>
+                    <button class="btn btn-outline-danger fw-bold p-3 m-2 " style="font-weight: bold;" value="-" onclick = "Solve('-')">&nbsp;-&nbsp;</button>
+                </div>
+            </div>
+            <div class="row mb-2">
+                <div class="col">
+                    <button class="btn btn-outline-dark fw-bold p-3 m-2 " value="1" onclick = "Solve('1')">&nbsp;1&nbsp;</button>
+                    <button class="btn btn-outline-dark fw-bold p-3 m-2 " value="2" onclick = "Solve('2')">&nbsp;2&nbsp;</button>
+                    <button class="btn btn-outline-dark fw-bold p-3 m-2 " value="3" onclick = "Solve('3')">&nbsp;3&nbsp;</button>
+                    <button class="btn btn-outline-danger fw-bold p-3 m-2 " style="font-weight: bold;" value="+"onclick = "Solve('+')">+&nbsp;</button>
+                </div>
+            </div>
+            <div class="row mb-2">
+                <div class="col">
+                    <button class="btn btn-outline-dark fw-bold p-3 m-2 " value="00" onclick = "Solve('00')">00</button>
+                    <button class="btn btn-outline-dark fw-bold p-3 m-2 " value="0" onclick = "Solve('0')">&nbsp;0&nbsp;</button>
+                    
+                    <button class="btn btn-outline-danger p-1 ps-5 pe-5 m-2 " style="font-weight: bold;font-size: xx-large; " value="=" onclick = "Result()">=</button>
+                </div>
+            </div>
+        </div></center>
+        <h3 class="text-center text-bg-secondary mt-2 p-2 mb-1">Using HTML / CSS / JavaScript</h3>
+    </div>
+<script src="script.js"></script>
+</body>
+</html>
